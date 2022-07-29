@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .site {
+        width: 80%;
+        margin: 40px auto;
+    }
+</style>
+
+<body>
+    <div class="site">
+        <div class="navigation">
+            <div id="logo">
+                <p class="logoname1">Avinash</p>
+                <p class="logoname2">Avinash</p>
+            </div>
+            <ul id="menu">
+                <li>name: <input type="text" name="name" id="name"></li>
+                <li>emial: <input type="email" name="email" id="email"></li>
+                <li>address</li>
+            </ul>
+
+        </div>
+        <div class="body">
+
+        </div>
+        <div class="footer">
+            <button onclick="execute()">Click me</button>
+
+        </div>
+    </div>
+</body>
+
+<script>
+    function execute() {
+        let content = document.getElementById("menu");
+        // console.log(content);
+        // firstChildElement, secondChildElement, children[].textContent
+        // let x = content.children[0].textContent;
+        // let firstChild = content.firstElementChild.querySelector("input[name='name']");
+        // let name = firstChild.value;
+        let children = content.querySelectorAll('input');
+        // console.log(children[0].value);
+        // let node_no = children.length
+        // let data = []
+
+        // for (let i = node_no; i--; i >= 0) {
+        //     // console.log(i);
+        //     // console.log(children[i]);
+        //     item = children[i].value;
+        //     // console.log(children[i].value);
+        //     data.push(item);
+        // };
+        // console.log(typeof data[0]);
+
+        // let obj_type = { "id": 1, "name": "Avinash", "email": "aviavi61106@gmail.com" };
+        // let json_data = JSON.stringify(obj_type);
+
+        // let json_text_type_string = '{"employees":[' +
+        //     '{"firstName":"John","lastName":"Doe" },' +
+        //     '{"firstName":"Anna","lastName":"Smith" },' +
+        //     '{"firstName":"Peter","lastName":"Jones" }]}';
+        // let js_data = JSON.parse(json_text_type_string);
+        // // js_data === obj_type
+        // console.log(js_data["employees"]);
+        // // console.log(typeof obj_type);
+        // console.log(typeof obj_type);
+        // console.log(typeof text);
+
+    }
+</script>
+
+</html>
