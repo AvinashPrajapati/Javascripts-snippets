@@ -1,2 +1,2 @@
 # Javascripts
-Just practicing
+Some often used JS snippets in daily web dev.
